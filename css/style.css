@@ -1,0 +1,95 @@
+/* ===============common css tart start here================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+/* ===============common css tart end here================ */
+/* ===============container css tart start here================ */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    background: url(../images/todo\ img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ===============container css tart end here================ */
+/* ===============todo head css tart start here================ */
+/* ====error css === */
+.error{
+    font-size: 24px ;
+    color: red;
+}
+/* ====error css === */
+
+.todoHead{
+    width: 455px;
+    height: 50px;
+    border: 2px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.todoHead .todoInput{
+    width: 450px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    font-weight: 400px;
+    color: rgb(0, 0, 0);
+}
+.todoHead Button{
+    padding:0px 15px;
+    font-size: 24px;
+    background: chocolate;
+    outline: none;
+    border: none;
+    color: white;
+}
+.todoHead .todoButton:active{
+    transform: scale(1.1);
+}
+/* ===============todo head css tart end here================ */
+/* ===============todoList css tart start here================ */
+.singleTodoList{
+    width: 455px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.singleTodoList input{
+    width: 370px;
+    height:36px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+}
+.singleTodoList button{
+    padding: 3px 5px;
+    font-size: 18px;
+    background: rgb(212, 212, 8);
+    border: none;
+    outline: none;
+    color: black;
+}
+.singleTodoList .singleDeleteButton{
+    background: red;
+    color: white;
+}
+/* ===============todoList css tart end here================ */
+
+/* ===============container css tart end here================ */
+
+
+
+
