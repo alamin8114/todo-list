@@ -45,11 +45,14 @@ let handelButton =()=>{
         singleEditButton.addEventListener("click" , ()=>{
             if (singleEditButton.innerHTML == "edit"){
                 singleEditButton.innerHTML      = "Save"
+                singleEditButton.style = "background:green;color:white;"
                 singleInput.removeAttribute("readonly" , "readonly")
             }
             else{
                 singleEditButton.innerHTML      = "Edit"
                 singleInput.setAttribute("readonly" ,"readonly")
+                singleEditButton.style = "background:yellow;color:black;"
+
             }
         })
 
