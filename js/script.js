@@ -41,6 +41,18 @@ let handelButton =()=>{
 
         // =====set attribute 
         singleInput.setAttribute("readonly" ,"readonly")
+        //=========edit button set 
+        singleEditButton.addEventListener("click" , ()=>{
+            if (singleEditButton.innerHTML == "edit"){
+                singleEditButton.innerHTML      = "Save"
+                singleInput.removeAttribute("readonly" , "readonly")
+            }
+            else{
+                singleEditButton.innerHTML      = "Edit"
+                singleInput.setAttribute("readonly" ,"readonly")
+            }
+        })
+
         // =====remove button set
         singleDeleteButton.addEventListener("click" , ()=>{
             singleTodoList.remove()
